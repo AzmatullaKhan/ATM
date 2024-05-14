@@ -1,0 +1,38 @@
+body{
+    margin:0px
+}
+.main-container{
+    margin:0px;
+    padding: 0px;
+    height:846px;
+    width:1492px;
+    background-color: #000;  
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.image{
+    height:846px;
+    width:700px;
+}
+button{
+    position: absolute;
+    height: 40px;
+    width: 180px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 12px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    top:600px;
+    left:770px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
