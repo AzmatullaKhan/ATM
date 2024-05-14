@@ -15,7 +15,7 @@ body{
     height:846px;
     width:700px;
 }
-button{
+.button{
     position: absolute;
     height: 40px;
     width: 180px;
@@ -32,7 +32,7 @@ button{
     cursor: pointer;
     font-weight: bolder;
 }
-button:hover{
+.button:hover{
     background-color: #fff;
     color: #000;
 }

@@ -21,7 +21,7 @@ export const Pin=()=>{
             <input type="password" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
                 boxSizing:"border-box", textAlign:"center", color:"#fff", fontFamily:"'Courier New', Courier, monospace"
             }}placeholder="Enter the Pin"  maxLength={4} minLength={4} id="input"/>
-            <button type="submit" style={{position:"relative",left:"20px",top:"0"}} onClick={handlePin}>Press here</button>
+            <button type="submit" style={{position:"relative",left:"20px",top:"0"}} onClick={handlePin} className="button">Press here</button>
         </div>
     )
 }

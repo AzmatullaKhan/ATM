@@ -1,0 +1,62 @@
+.withdrawal-main{
+    margin:0px;
+    padding:0px;
+    height:846px;
+    width:1490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.withdrawal-savings{
+    position: relative;
+    left:550px;
+    width:350px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.withdrawal-current{
+    position: relative;
+    left:550px;
+    width:350px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.withdrawal-kcc{
+    position: relative;
+    left:620px;
+    width:280px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.loading{
+    height:5px;
+    width:1200px;
+    border:1px solid #fff;
+    background-color: #fff;
+    /* display: none; */
+    animation: loading-animation 5s;
+}
+@keyframes loading-animation {
+    0%{width:0px;display: block;}
+    99.99%{width:1200px; display: none;}
+    100%{display: none;}
+}
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}

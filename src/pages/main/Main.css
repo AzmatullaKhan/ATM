@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    border: 1px solid #fff;
 }
 .loading{
     height:5px;
@@ -15,7 +16,7 @@
     border:1px solid #fff;
     background-color: #fff;
     /* display: none; */
-    animation: loading-animation 2s;
+    animation: loading-animation 5s;
 }
 @keyframes loading-animation {
     0%{width:0px;display: block;}
@@ -27,4 +28,88 @@
 }
 .hidden{
     display: none;
+}
+.withdrawal{
+    position: relative;
+    left:500px;
+    width:400px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.main-button{
+    height: 40px;
+    width: 180px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 12px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top:20px;
+    border:1px solid #fff;
+    margin-left:20px
+}
+.main-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.balance-enquiry{
+    position: relative;
+    left:400px;
+    width:500px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.mini-statement{
+    position: relative;
+    left:420px;
+    width:500px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.pin-change{
+    position: relative;
+    left:-420px;
+    width:500px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.pin-generation{
+    position: relative;
+    left:-420px;
+    width:500px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.deposit{
+    position: relative;
+    left:-420px;
+    width:500px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
+}
+.fast-cash{
+    position: relative;
+    left:510px;
+    width:400px;
+    display: flex;
+    box-sizing: border-box;
+    margin:20px 0px;
+    /* border: 1px solid #fff; */
 }

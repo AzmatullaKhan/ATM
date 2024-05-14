@@ -9,7 +9,7 @@ export const Opening=()=>{
     return(
         <div className='main-container'>
            <img src={require('../../images/opening-bacground.jpg')} className='image' alt='opening-background'/>
-           <button onClick={navigateMain}>Insert the card</button>
+           <button onClick={navigateMain} className='button'>Insert the card</button>
         </div>
     )
 }
