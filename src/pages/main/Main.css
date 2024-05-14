@@ -1,0 +1,30 @@
+.main-container{
+    margin:0px;
+    padding: 0px;
+    height:846px;
+    width:1492px;
+    background-color: #000;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.loading{
+    height:5px;
+    width:1200px;
+    border:1px solid #fff;
+    background-color: #fff;
+    /* display: none; */
+    animation: loading-animation 2s;
+}
+@keyframes loading-animation {
+    0%{width:0px;display: block;}
+    99.99%{width:1200px; display: none;}
+    100%{display: none;}
+}
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
