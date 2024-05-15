@@ -24,6 +24,10 @@ export const MainPage=()=>{
         navigate('/pinchange')
     }
 
+    const handleGeneratePin=()=>{
+        navigate('/generatepin')
+    }
+
     return(
         <div className="main-container">
             <div className='visible' id='loading' style={{textAlign:"center"}}>
@@ -44,7 +48,7 @@ export const MainPage=()=>{
                     <button className='main-button' onClick={handleBalanceEnquiry}>Press Here</button>
                 </div>
                 <div className='pin-generation'>
-                    <button className='main-button' style={{marginRight:"20px"}}>Press Here</button>
+                    <button className='main-button' style={{marginRight:"20px"}} onClick={handleGeneratePin}>Press Here</button>
                     <h1 >Generate Pin</h1>
                 </div>
                 <div className='mini-statement'>

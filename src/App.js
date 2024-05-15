@@ -8,6 +8,7 @@ import {AmountDeducted} from './pages/withdrawal/AmountDeducted'
 import {BalanceEnquiry} from './pages/balanceenquiry/BalanceEnquiry'
 import {MiniStatement} from './pages/statement/Statement'
 import { PinChange } from "./pages/pinchange/PinChnage";
+import { GeneratePin } from "./pages/generatepin/GeneratePin";
 function App() {
   return (
     <Routes>
@@ -21,6 +22,7 @@ function App() {
       <Route path='/balanceenquiry' element={<BalanceEnquiry/>}></Route>
       <Route path='/ministatement' element={<MiniStatement/>}></Route>
       <Route path='/pinchange' element={<PinChange/>}></Route>
+      <Route path='/generatepin' element={<GeneratePin/>}></Route>
     </Routes>
   );
 }
