@@ -16,12 +16,21 @@ export const Pin=()=>{
         }
         navigate('/main')
     }
+    const handleGeneratePin=()=>{
+        navigate('/generatepin')
+    }
     return(
         <div style={{height:"846px",width:"1492px", display:"flex", justifyContent:"center", alignItems:"center", boxSizing:"border-box"}}>
-            <input type="password" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
-                boxSizing:"border-box", textAlign:"center", color:"#fff", fontFamily:"'Courier New', Courier, monospace"
-            }}placeholder="Enter the Pin"  maxLength={4} minLength={4} id="input"/>
-            <button type="submit" style={{position:"relative",left:"20px",top:"0"}} onClick={handlePin} className="button">Press here</button>
+            <div>
+                <input type="password" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
+                    boxSizing:"border-box", textAlign:"center", color:"#fff", fontFamily:"'Courier New', Courier, monospace"
+                }}placeholder="Enter the Pin"  maxLength={4} minLength={4} id="input"/>
+                <button type="submit" style={{position:"relative",left:"20px",top:"0"}} onClick={handlePin} className="button">Press here</button>
+                <div className='pin-generation' style={{top:"300px", left:"-300px"}}>
+                    <button className='main-button' style={{marginRight:"20px"}} onClick={handleGeneratePin}>Press Here</button>
+                    <h1 >Generate Pin</h1>
+                </div>
+            </div>
         </div>
     )
 }

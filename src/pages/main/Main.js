@@ -24,8 +24,12 @@ export const MainPage=()=>{
         navigate('/pinchange')
     }
 
-    const handleGeneratePin=()=>{
-        navigate('/generatepin')
+    const handleTransfer=()=>{
+        navigate('/transfer')
+    }
+
+    const handleFastCash=()=>{
+        navigate('/fastcash')
     }
 
     return(
@@ -47,37 +51,19 @@ export const MainPage=()=>{
                     <h1 >Balance enquiry</h1>
                     <button className='main-button' onClick={handleBalanceEnquiry}>Press Here</button>
                 </div>
-                <div className='pin-generation'>
-                    <button className='main-button' style={{marginRight:"20px"}} onClick={handleGeneratePin}>Press Here</button>
-                    <h1 >Generate Pin</h1>
+                <div className='deposit'>
+                    <button className='main-button' style={{marginRight:"20px"}} onClick={handleTransfer}>Press Here</button>
+                    <h1 >Transfer</h1>
                 </div>
                 <div className='mini-statement'>
                     <h1 >Mini Statement</h1>
                     <button className='main-button' onClick={handleMiniStatement}>Press Here</button>
-                </div>
-                <div className='deposit'>
-                    <button className='main-button' style={{marginRight:"20px"}}>Press Here</button>
-                    <h1 >Transfer</h1>
-                </div>
+                </div><br></br><br></br>
                 <div className='fast-cash'>
                     <h1 >Fast Cash</h1>
-                    <button className='main-button'>Press Here</button>
+                    <button className='main-button' onClick={handleFastCash}>Press Here</button>
                 </div>
             </div>
         </div>
     )
 }
-//1.Fast Cash
-// 2.Withdrawal
-// 3.Balance enquiry
-// 4.mini statement
-// 5.
-
-// Step 1: Insert ATM Card:
-// Step 2: Select Language.
-// Step 3: Enter 4-Digit ATM Pin:
-// Step 4: Select the type of Transaction:
-// Step 5: Select the Type of Account:
-// Step 6: Enter the withdrawal amount.
-// Step 7: Collect the Cash:
-// Step 8: Take a printed receipt , if needed:
