@@ -20,6 +20,10 @@ export const MainPage=()=>{
         navigate('/ministatement')
     }
 
+    const handlePinChange=()=>{
+        navigate('/pinchange')
+    }
+
     return(
         <div className="main-container">
             <div className='visible' id='loading' style={{textAlign:"center"}}>
@@ -32,7 +36,7 @@ export const MainPage=()=>{
                     <button className='main-button' onClick={handleWithdrawal}>Press Here</button>
                 </div>
                 <div className='pin-change'>
-                    <button className='main-button' style={{marginRight:"20px"}}>Press Here</button>
+                    <button className='main-button' style={{marginRight:"20px"}} onClick={handlePinChange}>Press Here</button>
                     <h1 >Pin Change</h1>
                 </div>
                 <div className='balance-enquiry'>
