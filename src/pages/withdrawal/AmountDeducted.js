@@ -11,7 +11,7 @@ export const AmountDeducted=()=>{
     }, 5000);
     const handleAmount=()=>{
         let amount= Number(document.getElementById('amount-input').value);
-        if(amount%100===0){
+        if(amount%100===0 && amount!==0){
             document.getElementById('amountdeducted-content').className='hidden'
             document.getElementById('loading').className='visible'
 

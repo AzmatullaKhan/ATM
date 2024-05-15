@@ -12,6 +12,14 @@ export const MainPage=()=>{
         navigate('/withdrawal')
     }
 
+    const handleBalanceEnquiry=()=>{
+        navigate('/balanceenquiry')
+    }
+
+    const handleMiniStatement=()=>{
+        navigate('/ministatement')
+    }
+
     return(
         <div className="main-container">
             <div className='visible' id='loading' style={{textAlign:"center"}}>
@@ -29,7 +37,7 @@ export const MainPage=()=>{
                 </div>
                 <div className='balance-enquiry'>
                     <h1 >Balance enquiry</h1>
-                    <button className='main-button'>Press Here</button>
+                    <button className='main-button' onClick={handleBalanceEnquiry}>Press Here</button>
                 </div>
                 <div className='pin-generation'>
                     <button className='main-button' style={{marginRight:"20px"}}>Press Here</button>
@@ -37,11 +45,11 @@ export const MainPage=()=>{
                 </div>
                 <div className='mini-statement'>
                     <h1 >Mini Statement</h1>
-                    <button className='main-button'>Press Here</button>
+                    <button className='main-button' onClick={handleMiniStatement}>Press Here</button>
                 </div>
                 <div className='deposit'>
                     <button className='main-button' style={{marginRight:"20px"}}>Press Here</button>
-                    <h1 >Deposit</h1>
+                    <h1 >Transfer</h1>
                 </div>
                 <div className='fast-cash'>
                     <h1 >Fast Cash</h1>

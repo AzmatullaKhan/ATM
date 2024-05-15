@@ -5,6 +5,8 @@ import {MainPage} from './pages/main/Main'
 import {Pin} from './pages/pin/Pin'
 import {Withdrawal} from './pages/withdrawal/Withdrawal'
 import {AmountDeducted} from './pages/withdrawal/AmountDeducted'
+import {BalanceEnquiry} from './pages/balanceenquiry/BalanceEnquiry'
+import {MiniStatement} from './pages/statement/Statement'
 function App() {
   return (
     <Routes>
@@ -15,7 +17,8 @@ function App() {
       <Route path='/savings' element={<AmountDeducted/>}></Route>
       <Route path='/current' element={<AmountDeducted/>}></Route>
       <Route path='/kcc' element={<AmountDeducted/>}></Route>
-
+      <Route path='/balanceenquiry' element={<BalanceEnquiry/>}></Route>
+      <Route path='/ministatement' element={<MiniStatement/>}></Route>
     </Routes>
   );
 }
