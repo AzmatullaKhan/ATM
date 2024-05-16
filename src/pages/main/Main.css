@@ -112,3 +112,12 @@
     margin:20px 0px;
     /* border: 1px solid #fff; */
 }
+footer{
+    position: absolute;
+    top:800px
+}
+footer a{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}

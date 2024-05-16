@@ -68,6 +68,9 @@ export const GeneratePin=()=>{
                 <p>Thank You</p>
                 <button onClick={handlePinGenerateEnd} className="main-button">End Transaction</button>
             </div>
+            <footer>
+                <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+            </footer>
         </div>
     )
 }

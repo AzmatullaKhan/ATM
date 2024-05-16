@@ -48,11 +48,11 @@ export const Transfer=()=>{
     return(
         <div style={{height:"846px",width:"1492px", display:"flex", justifyContent:"center", alignItems:"center", boxSizing:"border-box"}}>
             <div className="hidden" id="pingenerate-main">
-                <input type="number" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
+                <input type="text" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
                     boxSizing:"border-box", textAlign:"center", color:"#fff", fontFamily:"'Courier New', Courier, monospace"
-                }}placeholder="Enter the account number (12 numbers)"  max={999999999999} min={100000000000} id="input-otp"/><br></br><br></br><br></br>
+                }}placeholder="Enter the account number (12 numbers)"  maxLength={12} minLength={12} id="input-otp"/><br></br><br></br><br></br>
 
-                <input type="number" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
+                <input type="text" style={{height:"60px", width:"500px", border:"1px solid #fff", borderRadius:"12px", backgroundColor:"transparent",
                     boxSizing:"border-box", textAlign:"center", color:"#fff", fontFamily:"'Courier New', Courier, monospace"
                 }}placeholder="Enter the amount" id="input-pin" className="hidden"/><br></br><br></br><br></br>
                 <button type="submit" style={{position:"relative",left:"20px",top:"0"}} className="button" onClick={handlePinGenerate}>Press here</button>
@@ -69,6 +69,9 @@ export const Transfer=()=>{
                 <p>Thank You</p>
                 <button onClick={handlePinGenerateEnd} className="main-button">End Transaction</button>
             </div>
+            <footer>
+                <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+            </footer>
         </div>
     )
 }

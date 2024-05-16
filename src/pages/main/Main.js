@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './Main.css'
 export const MainPage=()=>{
     const navigate= useNavigate();
+
     setTimeout(() => {
         document.getElementById('loading').className='hidden'
         document.getElementById('main-content').className='visible'
@@ -64,6 +65,9 @@ export const MainPage=()=>{
                     <button className='main-button' onClick={handleFastCash}>Press Here</button>
                 </div>
             </div>
+            <footer>
+                <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+            </footer>
         </div>
     )
 }

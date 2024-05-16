@@ -36,6 +36,9 @@ export const Withdrawal=()=>{
                     <button className='main-button' onClick={handleWithdrawalKCC}>Press Here</button>
                 </div><br></br>
             </div>
+            <footer>
+                <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+            </footer>
         </div>
     )
 }

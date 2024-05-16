@@ -31,6 +31,9 @@ export const Pin=()=>{
                     <h1 >Generate Pin</h1>
                 </div>
             </div>
+            <footer>
+                <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+            </footer>
         </div>
     )
 }
